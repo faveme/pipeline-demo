@@ -1,0 +1,6 @@
+2021-03-03 14:03:21.957 [  ]  INFO 14744 --- [           main] c.r.LogAggregationDemoApplicationTests   : Starting LogAggregationDemoApplicationTests using Java 1.8.0_281 on DESKTOP-N43FAR2 with PID 14744 (started by FM in C:\Revature\210201sre\demo\demos\week4\LogAggregationDemo)
+2021-03-03 14:03:24.021 [  ]  INFO 14744 --- [           main] c.r.LogAggregationDemoApplicationTests   : No active profile set, falling back to default profiles: default
+2021-03-03 14:03:33.194 [  ]  INFO 14744 --- [           main] c.r.LogAggregationDemoApplicationTests   : Started LogAggregationDemoApplicationTests in 13.561 seconds (JVM running for 14.551)
+2021-03-03 20:38:20.003 [  ]  INFO 14304 --- [           main] c.r.LogAggregationDemoApplicationTests   : Starting LogAggregationDemoApplicationTests using Java 1.8.0_281 on DESKTOP-N43FAR2 with PID 14304 (started by FM in C:\Revature\210201sre\demo\demos\week4\LogAggregationDemo)
+2021-03-03 20:38:22.097 [  ]  INFO 14304 --- [           main] c.r.LogAggregationDemoApplicationTests   : No active profile set, falling back to default profiles: default
+2021-03-03 20:38:29.692 [  ]  INFO 14304 --- [           main] c.r.LogAggregationDemoApplicationTests   : Started LogAggregationDemoApplicationTests in 12.035 seconds (JVM running for 12.934)
