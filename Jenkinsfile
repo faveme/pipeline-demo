@@ -5,7 +5,7 @@ pipeline {
         DOCKER_IMAGE_NAME = "faveme/project1"
         MAVEN_IMAGE_NAME = "log-aggregation-demo:0.0.1-SNAPSHOT"
     }
-    Stages {
+    stages {
 
         stage('Build') {
             steps {
