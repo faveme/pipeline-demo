@@ -16,7 +16,20 @@ pipeline {
                 }
             }
         }
-
+        stage ('Sonar Quality Analysis'){
+            steps {
+                withdSonarQubeEnv(credentialsId: 'sonar-token', installationName: 'sonarcloud') {
+                    sh 'mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar'
+                }
+            }
+        }
+        stage('Wait for Quality Gate') {
+            steps {
+            timeout(time: 30, unit: 'MINUTES') {
+              def qualitygate = waitForQualityGate abortpipeline: true   
+                }
+            }
+        }
         stage('Push Docker Image') {
             // when {
             //     //only executes the Docker Push stage if we are on the master branch
@@ -32,6 +45,12 @@ pipeline {
                     }
                 }
             }
+        }
+    }
+    post {
+        always {
+            // can use the previously created qualitygate variable to perhaps include results of as part of discordsend insturctions
+            //might use another "script" scope
         }
     }
 }
