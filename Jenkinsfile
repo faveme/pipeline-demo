@@ -18,7 +18,7 @@ pipeline {
         }
         stage ('Sonar Quality Analysis'){
             steps {
-                withdSonarQubeEnv(credentialsId: 'sonar-token', installationName: 'sonarcloud') {
+                withSonarQubeEnv(credentialsId: 'sonar-token', installationName: 'sonarcloud') {
                     sh './mvnw -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar'
                 }
             }
