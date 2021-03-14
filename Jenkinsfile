@@ -47,10 +47,10 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            // can use the previously created qualitygate variable to perhaps include results of as part of discordsend insturctions
-            //might use another "script" scope
-        }
-    }
+    // post {
+    //     always {
+    //         // can use the previously created qualitygate variable to perhaps include results of as part of discordsend insturctions
+    //         //might use another "script" scope
+    //     }
+    // }
 }
